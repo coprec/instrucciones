@@ -314,7 +314,7 @@ document.getElementById("meet").addEventListener("click",function(e)
 
 	confirm('¿Verific&oacute; si es el d&iacute;a y hora correcto?', function (data) {
         if (data)
-	    window.open(this.href, "_blank");
+	    window.open(document.getElementById("meet").href, "_blank");
         else
             alert('Vuelva a hacer click el dia y hora correcto')
     }, {return: true});	
