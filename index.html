@@ -202,7 +202,15 @@ document.getElementById("meet").addEventListener("click", function(e)
 {
 	e.preventDefault();
 	e.stopPropagation();
-	alert('prueba');
+
+	new duDialog('CSSSCRIPT.COM', 'Are You Sure?', duDialog.OK_CANCEL, { okText: 'SI',
+  callbacks: {
+    okClick: function(){
+      // do something
+      this.hide();  // hides the dialog
+    }
+  }
+
 });		
 
 		
